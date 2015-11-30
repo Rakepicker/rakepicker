@@ -1,119 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <style>
-  body {
-      position: relative;
-      background-image: url("images/bcgbdy.jpg");
-      background-repeat: repeat-x;
-  }
+    <head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <style>
+body {
+    position: relative;
+    background-image: url("images/bcgbdy.jpg");
+    background-repeat: repeat-x;
+}
   .affix {
       top: 10px;
   }
   div.col-sm-9 div {
       font-size: 28px;
   }
-  #section1, #section2 {
+  #section1, #section2, #section31, #section32, #section4    {
       top: 10px;
   }
-  #section31 {color: #fff; background-color: #ff9800;}
-  #section32 {color: #fff; background-color: #00bcd4;}
-  #section4 {color: #fff; background-color: #009688;}
-  
+
   @media screen and (max-width: 810px) {
-    #section1, #section2, #section3, #section41, #section42  {
-        margin-left: 150px;
-    }
+      #section1, #section2, #section3, #section41, #section42  {
+          margin-left: 150px;
+      }
   }
-  </style>
-</head>
-<body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
+        </style>
+    </head>
+    <body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
 
-<div class="container">
-  <div class="row" class="">
-    <nav class="col-sm-3" id="myScrollspy">
-      <div class="panel header" style="color: #fff; background-color: #1E88E5;" data-spy="affix">
-        <h1 class="header ">RakePicker</h1>
-        <p class="header ">Poker Afilliate web site</p>
-      <img src="images/left-image.jpg" width=100%></img>
-      <ul class="nav nav-pills nav-stacked"  data-offset-top="205" style="background:#1A1A1A">
-        <li><a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="lead">Home</a></li>
-        <li><a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="lead">FAQ</a></li>
-        <li class="dropup">
-          <a class="dropdown-toggle lead" data-toggle="dropdown" href="#">Partners<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#section31" class="lead">Party Pocker</a></li>
-            <li><a href="#section32" class="lead">Coming soon</a></li>                     
-          </ul>
-        </li>
-        <li><a href="#section4" class="lead">Contact</a></li>
-      </ul>
+        <div class="container">
+            <div class="row" class="">
+                <nav class="col-sm-3" id="myScrollspy">
+                    <div class="panel header" style="color: #fff; background-color: #1E88E5;" data-spy="affix">
+                        <h1 class="header ">RakePicker</h1>
+                        <p class="header ">Poker Afilliate web site</p>
+                        <img src="images/left-image.jpg" width=100%></img>
+                        <ul class="nav nav-pills nav-stacked"  data-offset-top="205" style="background:#1A1A1A">
+                            <li><a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="lead">Home</a></li>
+                            <li><a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="lead">FAQ</a></li>
+                            <li class="dropup">
+                                <a class="dropdown-toggle lead" data-toggle="dropdown" href="#">Partners<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a data-toggle="collapse" data-parent="#accordion" href="#collapse31" class="lead">Party Pocker</a></li>
+                                    <li><a data-toggle="collapse" data-parent="#accordion" href="#collapse32" class="lead">Coming soon</a></li>                     
+                                </ul>
+                            </li>
+                            <li><a data-toggle="collapse" data-parent="#accordion" href="#collapse4" class="lead">Contact</a></li>
+                        </ul>
 
-      </div>
-    </nav>
-    <div class="col-sm-9" style="top:10px">
-     <div class="panel-group" id="accordion">
-      <div class="panel panel-default" id="section1">    
-          <div class="panel-heading">
-              <h1 class="panel title"> 
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Welcome to RatePicker</a>
-              </h1>
-          </div>       
-          <div id="collapse1" class="panel-collapse collapse in">
-              <div class="panel-body">
-                  <h3>What is Rakeback?</h3>
-                  <h3>
-                      <p>A poker room's commission from a live or online poker game is called the 'rake'. You can't get any of this returned from a live game, but with online poker games you can, if you sign up with a reputable rakeback affiliate like RakePicker</p>
-                      <p>Online poker rooms make their money by automatically taking a cut of the players' stake money; this is the 'rake'. Typically the rake is 5% of every pot, you will often see it being taken and stacked at the top of the table during a game. Playing a few hundred hands a month soon accumulates a large amount of rake, and you could be paying tens of thousands of $$$ in rake a year. Most players don't realise they can get up to 75% of their rake money back with a rakeback affiliate</p>
-                  </h3>
-                  <hr>
-                  <h3>How does rakeback work?</h3>
-                  <h3>Here's how it works; we get paid by the poker rooms for bringing new players to their site. The commission we receive for signing you up to a poker room is based on the rake you generate by playing. We then give the majority of this commission back to you as rakeback.</h3>
-                  <hr> 
-                  <h3>Get the best rakeback deals</h3>
-                  <h3>To grab the best rakeback deals click the 'rakeback offers' button below and choose a top rakeback offer from our featured poker rooms. Follow our simple sign up guide and you'll be getting rakeback right away. If you're already playing at these rooms without a rakeback deal in place, sign up with another room on the same network to keep playing at the same online poker tables with the same players.
-                  </h3>
-              </div>
-          </div>
-      </div>
-      <div id="section2" class="panel panel-default"> 
-          <div class="panel-heading">
-              <h1 class="panel title"> 
-                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">FAQ</a>
-              </h1>
-          </div>       
-          <div id="collapse2" class="panel-collapse collapse in">
-              <div class="panel-body">
-        <h3>Q: Can I get rakeback for a site I already have an account with?</h3>
-        <h4>A: Some online poker sites do allow conversions of existing accounts. Contact us to find out if your poker site does!</h4>
-        <hr>
-        <h3>Q: Should I make a poker account and then contact you to activate rakeback?</h3>
-        <h4>A: If you make an account before signing up with RakeMeBack and receiving instructions, you will be considered a regular 'full' customer. This will likely prevent us from giving you rakeback for that site. Please contact us if you want more information.</h4>
-        <hr>
-        <h3>Q: How do I make a rakeback account? </h3>
-        <h4>A: You must first register a RakeMeBack user account. After you have logged in you can then add any number of deals to your account. The deals you have applied for will be displayed in an overview and for the majority of poker sites you will even be able to track the rake throughout the month.</h4>
-              </div>
-          </div>
-      </div>        
-      <div id="section31">         
-        <h1> Party Poker</h1>
-      </div>
-      <div id="section32">         
-        <h1>Coming Soon</h1>
-      </div>      
-      <div id="section4">         
-        <h1>Contact</h1>
-      </div>
-     </div>
-    </div>
-  </div>
-</div>
+                    </div>
+                </nav>
+                <div class="col-sm-9" style="top:10px">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default" id="section1">    
+                            <div class="panel-heading">
+                                <h1 class="panel title"> 
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Welcome to RatePicker</a>
+                                </h1>
+                            </div>       
+                            <div id="collapse1" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <h3>What is Rakeback?</h3>
+                                    <h3>
+                                        <p>A poker room's commission from a live or online poker game is called the 'rake'. You can't get any of this returned from a live game, but with online poker games you can, if you sign up with a reputable rakeback affiliate like RakePicker</p>
+                                        <p>Online poker rooms make their money by automatically taking a cut of the players' stake money; this is the 'rake'. Typically the rake is 5% of every pot, you will often see it being taken and stacked at the top of the table during a game. Playing a few hundred hands a month soon accumulates a large amount of rake, and you could be paying tens of thousands of $$$ in rake a year. Most players don't realise they can get up to 75% of their rake money back with a rakeback affiliate</p>
+                                    </h3>
+                                    <hr>
+                                    <h3>How does rakeback work?</h3>
+                                    <h3>Here's how it works; we get paid by the poker rooms for bringing new players to their site. The commission we receive for signing you up to a poker room is based on the rake you generate by playing. We then give the majority of this commission back to you as rakeback.</h3>
+                                    <hr> 
+                                    <h3>Get the best rakeback deals</h3>
+                                    <h3>To grab the best rakeback deals click the 'rakeback offers' button below and choose a top rakeback offer from our featured poker rooms. Follow our simple sign up guide and you'll be getting rakeback right away. If you're already playing at these rooms without a rakeback deal in place, sign up with another room on the same network to keep playing at the same online poker tables with the same players.
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="section2" class="panel panel-default"> 
+                            <div class="panel-heading">
+                                <h1 class="panel title"> 
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">FAQ</a>
+                                </h1>
+                            </div>       
+                            <div id="collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <h3>Q: Can I get rakeback for a site I already have an account with?</h3>
+                                    <h4>A: Some online poker sites do allow conversions of existing accounts. Contact us to find out if your poker site does!</h4>
+                                    <hr>
+                                    <h3>Q: Should I make a poker account and then contact you to activate rakeback?</h3>
+                                    <h4>A: If you make an account before signing up with RakeMeBack and receiving instructions, you will be considered a regular 'full' customer. This will likely prevent us from giving you rakeback for that site. Please contact us if you want more information.</h4>
+                                    <hr>
+                                    <h3>Q: How do I make a rakeback account? </h3>
+                                    <h4>A: You must first register a RakeMeBack user account. After you have logged in you can then add any number of deals to your account. The deals you have applied for will be displayed in an overview and for the majority of poker sites you will even be able to track the rake throughout the month.</h4>
+                                </div>
+                            </div>
+                        </div>        
+                        <div id="section31" class="panel panel-default"> 
+                            <div class="panel-heading">
+                                <h1 class="panel title"> 
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse31">Party Poker</a>
+                                </h1>
+                            </div>       
+                            <div id="collapse31" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <h3>~ Bonus: 100% up to 500$ on first deposit unlocked in $50 chunks</h3>
+                                    <h3>~ Network: Party Network </h3>
+                                    <h3>~ VIP Rewards: easy reach to 35% cashback</h3>
+                                    <h3>~ Welcome pack - tokens and free tickets for featured SNG's and tournaments</h3>
+                                    <h3>~ €5,000,000 monthly in Guaranteed Tournaments</h3>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="section32" class="panel panel-default"> 
+                            <div class="panel-heading">
+                                <h1 class="panel title"> 
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse32">Coming soon</a>
+                                </h1>
+                            </div>       
+                            <div id="collapse32" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <h1>Coming soon</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="section4" class="panel panel-default"> 
+                            <div class="panel-heading">
+                                <h1 class="panel title"> 
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Contact</a>
+                                </h1>
+                            </div>       
+                            <div id="collapse4" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <h1>Contact</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-</body>
+    </body>
 </html>                                		
